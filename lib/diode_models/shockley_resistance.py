@@ -3,6 +3,7 @@ from numpy import log as ln
 from lib.optimizer import Adam
 from lib.loss_functions import MSLE
 from scipy.special import lambertw
+from sympy import exp, LambertW, symbols, diff, print_latex, simplify
 
 
 def w(x):
@@ -24,7 +25,6 @@ class ShockleyResistanceDiodeModel:
 
 	@staticmethod
 	def derive_equations():
-		from sympy import exp, LambertW, symbols, diff, print_latex, simplify
 		# define symbolic variables
 		a, n, r, vt, vd = symbols('a n r v_t v_d')
 
