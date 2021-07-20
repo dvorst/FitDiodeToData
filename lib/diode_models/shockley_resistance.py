@@ -1,7 +1,7 @@
 from numpy import exp, real, stack
 from numpy import log as ln
-from src.optimizer import Adam
-from src.loss_functions import MSLE
+from lib.optimizer import Adam
+from lib.loss_functions import MSLE
 from scipy.special import lambertw
 
 

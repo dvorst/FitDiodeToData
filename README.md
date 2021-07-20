@@ -1,2 +1,2 @@
 # FitDiodeToData
-Fits Shockley diode model with series resistance to data
+Able to fit Shockley diode model with series resistance to data

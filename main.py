@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import src
+import lib
 from pathlib import Path
 import pandas
 
@@ -30,7 +30,7 @@ def main():
 	ids = data['Id [mA]'].values * 1e-3
 
 	# fit diode model to it
-	diode = src.diode_models.ShockleyResistanceDiodeModel()
+	diode = lib.diode_models.ShockleyResistanceDiodeModel()
 	diode.fit_model_to_data(ids, vds)
 
 	# print model parameters
